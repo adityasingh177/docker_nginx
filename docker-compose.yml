@@ -1,0 +1,9 @@
+version: '3'
+services:
+  nginx: 
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: docker_nginx
+    ports:
+      - "5000:5000"
